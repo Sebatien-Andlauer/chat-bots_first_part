@@ -1,0 +1,25 @@
+Etape 1 le serveur python :
+
+   D'abord, nous avons importé la classe Flask. Une instance de cette classe sera notre application WSGI.
+
+    Ensuite, nous avons créé une instance de cette classe. Le premier argument est le nom du module ou du paquet de l'application. Si vous utilisez un seul module
+     (comme dans cet exemple), vous devez utiliser __name__ car, selon qu'il est lancé en tant qu'application ou importé en tant que module, le nom sera différent
+      ("__main__" par rapport au nom d'importation réel). Ceci est nécessaire pour que Flask sache où chercher les modèles, les fichiers statiques, etc. Pour plus 
+      d'informations, consultez la documentation de Flask.
+
+    Nous utilisons ensuite le décorateur route() pour indiquer à Flask l'URL qui doit déclencher notre fonction.
+
+    La fonction reçoit un nom qui est également utilisé pour générer des URL pour cette fonction particulière, et renvoie le message que nous voulons afficher dans 
+    le navigateur de l'utilisateur.
+
+Il suffit de l'enregistrer sous le nom hello.py ou quelque chose de similaire. Veillez à ne pas appeler votre application flask.py car cela entrerait en conflit avec 
+Flask lui-même.
+
+Pour exécuter l'application, vous pouvez soit utiliser la commande flask, soit le commutateur -m de python avec Flask. Avant de pouvoir faire cela, vous devez indiquer 
+à votre terminal l'application avec laquelle vous souhaitez travailler en exportant la variable d'environnement FLASK_APP :
+
+
+Cela lance un serveur intégré très simple, qui est assez bon pour les tests, mais probablement pas ce que vous voulez utiliser en production. Pour les options de déploiement
+, voir Options de déploiement.
+
+Etape 2 : Début du codage de ??
